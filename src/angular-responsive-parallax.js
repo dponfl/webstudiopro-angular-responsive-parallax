@@ -199,7 +199,7 @@
 						frameRequestId = null;
 					}
 					if(imgCont){
-						imgCont.remove(imgCont);
+            $(imgCont).remove();
 						imgContImg = null;
 					}
 				}
