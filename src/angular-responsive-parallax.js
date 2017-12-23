@@ -40,14 +40,14 @@
 						// Check if the container-div exists, maybe created by another directive
 						var divCont = document.getElementById(containerDivId);
 						if(divCont === null) {
-							divCont = angular.element('<div style="position:fixed;left:0;top:0;z-index:0;width:100%;height:100%;"></div>');
+							divCont = angular.element('<div style="position:fixed;left:0;top:0;z-index:0;width:100%;"></div>');
 							divCont.attr('id',containerDivId);
 							angular.element(document.body).prepend(divCont);
 						}else{
 							divCont = angular.element(divCont);
 						}
 						// Two containers, one for cropping, one for holding the image.
-						imgCont = angular.element('<div style="position:fixed;left:0;top:0;width:100%;height:100%;overflow:hidden;"></div>');
+						imgCont = angular.element('<div style="position:fixed;left:0;top:0;width:100%;height:100%;"></div>');
 						imgContImg = angular.element('<img style="position:absolute;">');
 
 						divCont.append(imgCont);
