@@ -47,7 +47,7 @@
 							divCont = angular.element(divCont);
 						}
 						// Two containers, one for cropping, one for holding the image.
-						imgCont = angular.element('<div style="position:fixed;left:0;top:0;width:100%;height:100%;"></div>');
+						imgCont = angular.element('<div style="position:fixed;left:0;top:0;width:100%;overflow:hidden;"></div>');
 						imgContImg = angular.element('<img style="position:absolute;">');
 
 						divCont.append(imgCont);
